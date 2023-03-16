@@ -7,11 +7,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 from pathlib import Path
+import os
 
-projectRoot = "/home/mnichol3/ownCloud/accumulate_nmutations/"
+curDir = os.getcwd()
 
-simOutDir = projectRoot + "results/simout/"
-plotdir = projectRoot + "images/"
+simOutDir = curDir+ "results/simout/"
+plotdir = curDir + "images/"
 
 simOutFile = simOutDir+ "threeTypeOverTimePaperFig.csv"
 plotFile = plotdir + "threeTypeOverTimePaperFig.pdf"
