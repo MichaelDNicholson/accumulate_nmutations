@@ -137,6 +137,7 @@ if saveplot == 'T':
     
     Path(plotdir).mkdir(parents=True, exist_ok=True) #create image directory if doesn't exist yet
     #print(steps, times, sizes)
+    numtypes = int( (len(times_sizes_pd1.columns)-1)/3)
     colors = ['b','r','y']
     plt.xlim([0, 35])
     plt.ylim([0.8, 10000])
