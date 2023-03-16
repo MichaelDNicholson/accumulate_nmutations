@@ -9,7 +9,7 @@ import pandas as pd
 from pathlib import Path
 import os
 
-curDir = os.getcwd()
+curDir = os.getcwd() + "/"
 
 simOutDir = curDir+ "results/simout/"
 plotdir = curDir + "images/"
