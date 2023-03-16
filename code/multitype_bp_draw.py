@@ -154,5 +154,4 @@ if saveplot == 'T':
     
     figure = plt.gcf()
     figure.set_size_inches(8.5, 3)
-    plt.savefig(plotFile )
-    plt.show()
+    plt.savefig(plotFile,bbox_inches='tight' )
