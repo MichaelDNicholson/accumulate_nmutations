@@ -12,6 +12,5 @@ To reproduce manuscript images, the code below should be run in terminal with wo
 Figure 1c (cell numbers over time): 
 ```
 python code/multitype_bp_draw.py 
-
 ```
 Script multitype_bp_draw.py uses precalculated data in /results/simout. However editing script and setting redoSims='T' will result in simulation data being recreated.
