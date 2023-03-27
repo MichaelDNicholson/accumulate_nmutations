@@ -27,7 +27,8 @@ listCdfPlotsNoLeg <- lapply(listCdfPlots, function(p){
   return(p+theme(legend.position = "none"))
 })
 cdfPlotLegendTop <- get_legend(listCdfPlots[[1]]+
-                              theme(legend.position = "top"))
+                              theme(legend.position = "top",
+                                    legend.text=element_text(size=12)))
 
 
 #save in this order so plots with same birth/death parameters but different
