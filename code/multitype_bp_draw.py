@@ -11,7 +11,7 @@ import os
 
 curDir = os.getcwd() + "/"
 
-simOutDir = curDir+ "results/simout/"
+simOutDir = curDir+ "results/simout_cellcount_over_time/"
 plotdir = curDir + "images/"
 
 simOutFile = simOutDir+ "threeTypeOverTimePaperFig.csv"
