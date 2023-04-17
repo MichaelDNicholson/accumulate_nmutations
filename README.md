@@ -2,11 +2,8 @@
 Code associated with the manuscript "Mutation accumulation in exponentially growing
 populations". Preprint version obtainable at https://arxiv.org/abs/2208.02088 . 
 
-Usage: 
-```
-git clone https://github.com/MichaelDNicholson/accumulate_nmutations.git
-cd accumulate_nmutations
-```
+The aim of this repository is to provide code to reproduce all figures in manuscript and for ease of use with the main results. 
+
 
 To reproduce manuscript images, the code below should be run in terminal with working directory as accumulate_nmutations.
 Figure 1c (cell numbers over time): 
