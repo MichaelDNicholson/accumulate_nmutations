@@ -10,7 +10,11 @@ The main results from the paper are as follows (please refer to paper for explan
 ```math
 Z_n(t)\approx V_n t^{r_n-1}e^{\delta_n t},
 ```
-where $V_n$ is Mittag-Leffler distributed with tail parameter  $\lambda_1/\delta_n$, and scale parameter $\omega_n$. To numerically evaluating the scale parameter $\omega_n$ from a set of birth/death/mutation parameters, the function get_scale_tail_vec in /code/functionsCoreAccumulateNmuts.R can be used. This numerical value of $\omega_n$ is required, e.g. for evaluating $\mathbb{P}(Z_n(t)>k) \approx \mathbb{P}(V_n > k t^{1-r_n}e^{-\delta_n t})$. With $\omega_n$ in hand, the second main result can be numerically evaluated, which is that the arrival time for type $n+1$ cells is approximately 
+where $V_n$ is Mittag-Leffler distributed with tail parameter  $\lambda_1/\delta_n$, and scale parameter $\omega_n$. 
+
+In R, to numerically evaluating the scale parameter $\omega_n$ from a set of birth/death/mutation parameters, the function get_scale_tail_vec in /code/functionsCoreAccumulateNmuts.R can be used. This numerical value of $\omega_n$ is required, e.g. for evaluating $\mathbb{P}(Z_n(t)>k) \approx \mathbb{P}(V_n > k t^{1-r_n}e^{-\delta_n t})$. 
+
+With $\omega_n$ in hand, the second main result can be numerically evaluated, which is that the arrival time for type $n+1$ cells is approximately 
 ```math 
 \mathbb{P}(\tau_{n+1} >t) \approx \left[1+ \exp\left(\lambda_1 (t-t_{1/2}^{(n+1)})\right)\right]^{-1},
 ```
