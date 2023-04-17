@@ -1,5 +1,5 @@
 ### Overview
-Code associated with the manuscript "Mutation accumulation in exponentially growing
+Code associated with the manuscript "Sequential mutations in exponentially growing
 populations". Preprint version obtainable at https://arxiv.org/abs/2208.02088 . 
 
 The aim of this repository is to provide code to be able to numerically evaluate the main results and to reproduce figures in manuscript.
