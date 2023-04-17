@@ -24,9 +24,8 @@ These numerical evaluations are used, for instance, in generating the analytic c
 
 
 ### Reproduce figures
-To reproduce manuscript images, the code below should be run in terminal with working directory as accumulate_nmutations.
-Figure 1c (cell numbers over time): 
-```
-python code/multitype_bp_draw.py 
-```
-Script multitype_bp_draw.py uses precalculated data in /results/simout. However editing script and setting redoSims='T' will result in simulation data being recreated.
+To reproduce manuscript images:
+* Figure 1c (cell numbers over time): the code/multitype_bp_draw.py below should be run in terminal with working directory as accumulate_nmutations.Script multitype_bp_draw.py uses precalculated data in /results/simout. However editing script and setting redoSims='T' will result in simulation data being recreated.
+* Figure 2 (comparison of Mittag-Leffler distribution with cell numbers):
+* Figure 3: 
+
