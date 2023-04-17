@@ -6,9 +6,10 @@ The aim of this repository is to provide code to be able to numerically evaluate
 
 ### Numerically evaluate main results
 The main results from the paper are as follows (please refer to paper for explanation of notation). The number of cells of type $n$ at time $t$ is 
-$$
-Z_n(t)\approx V_n t^{r_n-1}e^{\delta_n t}.
-$$
+
+```
+$Z_n(t)\approx V_n t^{r_n-1}e^{\delta_n t}$.
+```
 
 
 ### Reproduce figures
