@@ -20,6 +20,8 @@ With $\omega_n$ in hand, the second main result can be numerically evaluated, wh
 ```
 with $t_{1/2}^{(n+1)}=\frac{1}{\delta_n}\log\frac{\delta_n}{\omega_n \nu_n [\delta_n^{-1}\log(\nu_n^{-1})]^{r_n-1}}$.
 
+These numerical evaluations are used, for instance, in generating the analytic curves to compare with simulated data in Fig. 3 (see code/functionsPlotHittingTimes.R).
+
 
 ### Reproduce figures
 To reproduce manuscript images, the code below should be run in terminal with working directory as accumulate_nmutations.
