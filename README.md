@@ -12,7 +12,7 @@ Z_n(t)\approx V_n t^{r_n-1}e^{\delta_n t},
 ```
 where $V_n$ is Mittag-Leffler distributed with tail parameter  $\lambda_1/\delta_n$, and scale parameter $\omega_n$. 
 
-In R, to numerically evaluating the scale parameter $\omega_n$ from a set of birth/death/mutation parameters, the function get_scale_tail_vec in /code/functionsCoreAccumulateNmuts.R can be used. This numerical value of $\omega_n$ is required, e.g. for evaluating $\mathbb{P}(Z_n(t)>k) \approx \mathbb{P}(V_n > k t^{1-r_n}e^{-\delta_n t})$. 
+In R, to numerically evaluating the scale parameter $\omega_n$ from a set of birth/death/mutation parameters, the function get_scale_tail_vec in code/functionsCoreAccumulateNmuts.R can be used. This numerical value of $\omega_n$ is required, e.g. for evaluating $\mathbb{P}(Z_n(t)>k) \approx \mathbb{P}(V_n > k t^{1-r_n}e^{-\delta_n t})$. 
 
 With $\omega_n$ in hand, the second main result can be numerically evaluated, which is that the arrival time for type $n+1$ cells is approximately 
 ```math 
@@ -20,13 +20,12 @@ With $\omega_n$ in hand, the second main result can be numerically evaluated, wh
 ```
 with $t_{1/2}^{(n+1)}=\frac{1}{\delta_n}\log\frac{\delta_n}{\omega_n \nu_n [\delta_n^{-1}\log(\nu_n^{-1})]^{r_n-1}}$.
 
-These numerical evaluations are used, for instance, in generating the analytic curves to compare with simulated data in Fig. 3 (see code/functionsPlotHittingTimes.R).
+These numerical evaluations are used, for instance, in generating the analytic curves to compare with simulated data in Fig. 3 of the paper, created with code/functionsPlotHittingTimes.R.
 
 
 ### Reproduce figures
-To reproduce manuscript images, the code below should be run in terminal with working directory as accumulate_nmutations.
-Figure 1c (cell numbers over time): 
-```
-python code/multitype_bp_draw.py 
-```
-Script multitype_bp_draw.py uses precalculated data in /results/simout. However editing script and setting redoSims='T' will result in simulation data being recreated.
+To reproduce manuscript images:
+* Figure 1c (cell numbers over time): the code/multitype_bp_draw.py below should be run in terminal with working directory as accumulate_nmutations.Script multitype_bp_draw.py uses precalculated data in /results/simout. However editing script and setting redoSims='T' will result in simulation data being recreated.
+* Figure 2 (comparison of Mittag-Leffler distribution with cell numbers):
+* Figure 3: 
+
