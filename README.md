@@ -24,7 +24,7 @@ These numerical evaluations are used, for instance, in generating the analytic c
 
 
 ### Reproduce figures
-To reproduce manuscript images:
+Code needed to reproduce manuscript images will need paths edited and parameters edited as required (e.g. setting birth/death/mutation rates as needed for a given figure):
 * Figure 1c (cell numbers over time). Data generation and plotting: the code/multitype_bp_draw.py below should be run in terminal with working directory as accumulate_nmutations. Script multitype_bp_draw.py uses precalculated data in /results/simout. Editing the script and setting redoSims='T' will result in simulation data being recreated.
 * Figure 2 (comparison of Mittag-Leffler distribution with simulations for cell numbers).
 * Figure 3 (comparison of logistic distribution with simulations for arrival times). Data generated using code/4type_simulations_arrivaltimes.py. Data stored in results/simout_arrivaltimes. Figure generated using simulation data as input in code/functionsPlotHittingTimes.R.
